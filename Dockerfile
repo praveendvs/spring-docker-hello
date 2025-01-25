@@ -1,5 +1,5 @@
 # Use an official Java runtime as a parent image
-FROM amazoncorretto:17
+FROM amazoncorretto:21
 RUN addgroup -S spring && adduser -S spring -G spring
 USER spring:spring
 ARG JAR_FILE=target/*.jar
